@@ -1,0 +1,156 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center; /* Centralizar os itens do menu */
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+.container section {
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.container section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Regras de Mídia para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .container section {
+        padding: 20px;
+    }
+
+    .container section h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .container section p {
+        font-size: 1em;
+    }
+
+    form input,
+    form textarea {
+        width: calc(100% - 20px);
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
